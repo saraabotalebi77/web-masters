@@ -1,0 +1,334 @@
+@font-face {
+    font-family: vazirBold;
+    src: url("../font/vazir-font/Vazir-Bold-FD.ttf");
+} 
+@font-face{
+    font-family: vazir;
+    src: url("../font/vazir-font/Vazir-Regular-FD.ttf");
+}
+@font-face{
+    font-family: vazirThin;
+    src: url("../font/vazir-font/Vazir-Thin-FD.ttf");
+}
+*{
+    font-family : vazir;
+    margin : 0;
+    padding :0;
+    box-sizing : border-box;
+} 
+body{
+    background-color: rgb(224, 224, 224);
+    direction : rtl;
+    padding-top : 30px;
+}
+
+/* style body of div header */
+.header{
+    width : 20%;
+    height : 550px;
+    background-color : rgba(31, 17, 224, 0.815);
+    color : white;
+    float : right;
+    margin-right :4%;
+    border-radius : 20px;
+}
+.logo{
+    width : 70px;
+    height : 70px;
+    text-align : center;
+    border-radius : 50%;
+    background-color : rgb(255, 73, 49);
+    margin : 25px 30px 10px 0 ;
+}
+.logo__icon{
+    font-size : 70px;
+}
+.title{
+    line-height : 2.5em;
+    margin-right : 30px;
+}
+.main-title{
+    font-size : 30px;
+    display : inline-block;
+}
+.dot{
+    display : inline-block;
+    width : 6px;
+    height : 6px;
+    border-radius : 50%;
+    background-color :rgb(255, 73, 49);
+}
+.description-title{
+    font-size : 10px;
+    line-height : 0em;
+}
+.menu-box{
+    margin-top : 50px;
+}
+.menu{
+    list-style-type : none;
+}
+.menu__link , .search__submit{
+    display : block;
+    padding-right : 30px;
+    padding-top : 2.5px;
+    padding-bottom : 2.5px;
+    text-decoration : none;
+    color : white;
+    font-size : 12px;
+}
+.menu__items:first-child .menu__link{
+    border-right : 2px solid rgb(255, 73, 49);
+}
+.menu__items:last-child .menu__icon{
+    color :rgb(255, 73, 49);
+}
+.menu__icon{
+    padding-left : 15px;
+    font-size : 15px;
+}
+.search__input , .search__submit{
+    background-color: rgba(65, 54, 228, 0.815);
+    color : white;
+    outline : none;
+    border : none;
+}
+.search__submit{
+    cursor: pointer;
+    float : right;
+}
+.search__input::placeholder{
+    color : white;
+}
+.footer{
+    height : auto;
+    list-style-type : none;
+    margin : 30px 30px 15px 0;
+    overflow : hidden;
+}
+.footer__items{
+    float : right ;
+    line-height : 2em;
+    text-align : center;
+    width : 30px;
+    height : 30px;
+    margin-left : 6px;
+    border-radius : 50%;
+    background-color :rgb(255, 73, 49);
+}
+.footer__link{
+    display : block;
+    color : white;
+}
+.footer__icon{
+    font-size : 18px;
+}
+.footer-text{
+    color : white;
+    font-size : 13px; 
+    margin-right : 30px;
+}
+
+/* style body of div main */
+.main{
+    position : relative;
+    right : 26.5%;
+    width : 70%;
+    height : 550px;
+    background-color: rgba(31, 17, 224, 0.815);
+    border-radius : 20px;
+}
+.background{
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    border-radius : 20px;
+}
+.background__image{
+    width : 100%;
+    height : 100%;
+    border-radius : 20px;
+    opacity : 0.05;
+}
+.container{
+    position : absolute;
+    top :32%;
+    bottom : 32%;
+    color : white;
+    padding : 0 130px;
+    font-size : 14px;
+}
+.header-one {
+    font-size : 40px;
+    margin-bottom : 10px;
+}
+.paragraph-one{
+    text-align : justify;
+}
+.link-box{
+    float : right;
+    border-radius : 50px;
+    text-align : center;
+    margin : 10px 0 0 10px;
+    padding : 8px 18px;
+}
+.box-one{
+    background-color: rgb(255, 73, 49);
+}
+.box-two{
+    border: 1px solid white;
+}
+.link{
+    display : block;
+    text-decoration : none;
+    color : white;
+}
+.link__icon{
+    padding-left:10px ;
+    font-size : 14px;
+}
+
+/* responsive web page */
+@media screen and (max-width : 1140px){
+    .header{
+        width : 23%;
+        margin-right :2%;
+    }
+    .logo , .title , .footer-text , .footer{
+        margin-right : 20px;
+    }
+    .menu__link , .search__submit{
+        padding-right : 20px;
+    }
+    .main{
+        right : 28%;
+    }
+    .container{
+        padding : 0 80px;
+    }
+    @media screen and (max-width : 985px){
+        .header{
+            width : 26%;
+            margin-right :3%;
+        }
+        .main{
+            width : 65%;
+            right : 32%;
+        }
+        .container{
+            top :30%;
+            bottom : 30%;
+            padding : 0 90px;
+        }
+    }
+}
+@media screen and (max-width : 870px){
+    .header{
+        width : 34%;
+        margin-right :4%;
+    }
+    .logo , .title , .footer , .footer-text{
+        margin-right : 15px;
+    }
+    .menu__link , .search__submit{
+        padding-right : 15px;
+    }
+    .main{
+        width : 55%;
+        right : 40%;
+    }
+    .container{
+        top :30%;
+        bottom : 30%;
+        padding : 0 40px;
+    }
+    .header-one {
+        font-size : 30px;
+    }
+    .paragraph-one{
+        font-size : 13px;
+    }
+    @media screen and (max-width : 800px){
+        .header{
+            width : 35%;
+            margin-right :3%;
+        }
+        .main{
+            width : 55%;
+            right : 42%;
+        }
+        .container{
+            top :25%;
+            bottom : 25%;
+            padding : 0 40px;
+        }
+        .link-box{
+            float : none;
+            width : 70%;
+            margin : 10px auto 0 ;
+        }
+        .header-one {
+            font-size : 25px;
+        }
+        @media screen and (max-width : 625px){
+            .header{
+                width : 45%;
+                margin-right :2%;
+            }
+            .main{
+                width : 45%;
+                right : 50%;
+            }
+            .container{
+                top :23%;
+                bottom : 20%;
+                padding : 0 10px;
+            }
+            .link-box{
+                float : none;
+                width : 90%;
+                margin : 10px auto 0 ;
+            }
+            .header-one {
+                font-size : 20px;
+            }
+            .paragraph-one{
+                font-size : 12px;
+            }
+        }
+    }
+}
+@media screen and (max-width : 500px){
+    body{
+        padding-top : 0;
+    }
+    .header{
+        width : 80%;
+        float : none;
+        margin : 20px auto;
+        padding-top : 30px;
+    }
+    .logo{
+        margin : 0px 40px 10px 0 ;
+    }
+    .title , .footer , .footer-text{
+        margin-right : 40px;
+    }
+    .menu__link ,.search__submit{
+        padding-right : 40px;
+    }
+    .main{
+        height : 500px;
+        right : 0;
+        width : 80%;
+        margin : 20px auto;
+    }
+    .container{
+        top :20%;
+        bottom : 20%;
+        padding : 0 50px;
+    }
+    .header-one {
+        font-size : 30px;
+    }
+}
